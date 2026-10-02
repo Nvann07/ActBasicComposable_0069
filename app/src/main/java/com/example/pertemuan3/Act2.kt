@@ -138,3 +138,10 @@ fun TugasPraktikumScreen(modifier: Modifier = Modifier) {
     }
 }
 
+@Preview(showBackground = true, showSystemUi = true)
+@Composable
+fun TugasPraktikumPreview() {
+    Pertemuan3Theme {
+        TugasPraktikumScreen()
+    }
+}
