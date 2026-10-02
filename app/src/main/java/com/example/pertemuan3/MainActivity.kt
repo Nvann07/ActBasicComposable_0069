@@ -7,17 +7,17 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import com.example.pertemuan3.ui.theme.Pertemuan3Theme
+import com.example.pertemuan3.ui.theme.TugasPertemuan3Theme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Pertemuan3Theme {
+            TugasPertemuan3Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    // Memanggil Composable Layout utama sesuai padding dari Scaffold
-                    TataletakBoxColumnRow(
-                        modifier = Modifier.padding(innerPadding) )
+                    // Memanggil Composable TugasPraktikumScreen dari Act2.kt
+                    TugasPraktikumScreen(
+                        modifier = Modifier.padding(innerPadding)
                     )
                 }
             }

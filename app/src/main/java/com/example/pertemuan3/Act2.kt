@@ -21,7 +21,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.pertemuan3.ui.theme.Pertemuan3Theme
+import com.example.pertemuan3.ui.theme.TugasPertemuan3Theme
 
 @Composable
 fun TugasPraktikumScreen(modifier: Modifier = Modifier) {
@@ -141,7 +141,7 @@ fun TugasPraktikumScreen(modifier: Modifier = Modifier) {
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun TugasPraktikumPreview() {
-    Pertemuan3Theme {
+    TugasPertemuan3Theme {
         TugasPraktikumScreen()
     }
 }
