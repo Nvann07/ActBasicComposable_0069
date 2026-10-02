@@ -129,3 +129,12 @@ fun TugasPraktikumScreen(modifier: Modifier = Modifier) {
                     Image(
                         painter = painterResource(id = R.drawable.ic_launcher_background),
                         contentDescription = "Showcase Image",
+                        modifier = Modifier.fillMaxSize(),
+                        contentScale = ContentScale.Crop
+                    )
+                }
+            }
+        }
+    }
+}
+
