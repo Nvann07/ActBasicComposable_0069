@@ -32,5 +32,12 @@ fun TugasPraktikumScreen(modifier: Modifier = Modifier) {
             Color(0xFF0D47A1), // Dark Blue
             Color(0xFF006064), // Deep Cyan
         )
-    )}
+    )
 
+    Box(
+        modifier = modifier
+            .fillMaxSize()
+            .background(backgroundBrush)
+            .padding(16.dp),
+        contentAlignment = Alignment.Center
+    ) }
