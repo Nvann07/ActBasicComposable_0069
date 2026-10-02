@@ -72,4 +72,23 @@ fun TugasPraktikumScreen(modifier: Modifier = Modifier) {
                     color = Color.Gray,
                     textAlign = TextAlign.Center
                 )
-            }
+
+                Spacer(modifier = Modifier.height(20.dp))
+
+                // Logo Container dengan bentuk lingkaran dan border
+                Box(
+                    modifier = Modifier
+                        .size(90.dp)
+                        .clip(CircleShape)
+                        .background(Color(0xFFE8EAF6))
+                        .border(2.dp, Color(0xFF3F51B5), CircleShape),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Image(
+                        painter = painterResource(id = R.drawable.umy_logo),
+                        contentDescription = "Logo UMY",
+                        modifier = Modifier.size(70.dp),
+                        contentScale = ContentScale.Fit
+                    )
+                }
+
