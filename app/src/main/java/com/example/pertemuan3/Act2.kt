@@ -40,4 +40,36 @@ fun TugasPraktikumScreen(modifier: Modifier = Modifier) {
             .background(backgroundBrush)
             .padding(16.dp),
         contentAlignment = Alignment.Center
-    ) }
+    ) {
+        Card(
+            modifier = Modifier
+                .fillMaxWidth()
+                .wrapContentHeight()
+                .shadow(16.dp, RoundedCornerShape(24.dp)),
+            shape = RoundedCornerShape(24.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.White.copy(alpha = 0.95f)
+            )
+        ) {
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(24.dp),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center
+            ) {
+                // Header Title
+                Text(
+                    text = "Login Yeeeee",
+                    fontSize = 28.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color(0xFF1A237E)
+                )
+                Spacer(modifier = Modifier.height(4.dp))
+                Text(
+                    text = "Halaman Login Yeeeee",
+                    fontSize = 14.sp,
+                    color = Color.Gray,
+                    textAlign = TextAlign.Center
+                )
+            }
