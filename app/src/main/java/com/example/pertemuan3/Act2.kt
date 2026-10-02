@@ -92,3 +92,27 @@ fun TugasPraktikumScreen(modifier: Modifier = Modifier) {
                     )
                 }
 
+                Spacer(modifier = Modifier.height(16.dp))
+
+                // Informasi User
+                Text(
+                    text = "Nama",
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.SemiBold,
+                    color = Color.Red
+                )
+                Spacer(modifier = Modifier.height(2.dp))
+                Text(
+                    text = "Novan Rizwardi",
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color(0xFF0D47A1)
+                )
+                Spacer(modifier = Modifier.height(4.dp))
+                Text(
+                    text = "20240140069",
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Medium,
+                    color = Color.DarkGray
+                )
+            }
