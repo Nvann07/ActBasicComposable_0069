@@ -1,4 +1,4 @@
-package com.example.mylayout
+package com.example.pertemuan3
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -108,7 +108,7 @@ fun TataletakRowColumn(modifier: Modifier = Modifier) {
 
 @Composable
 fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
-    val gambar = painterResource(id = R.drawable.notasinaton) // Sesuaikan dengan nama drawable Anda
+    val gambar = painterResource(id = R.drawable.ic_launcher_foreground) // Menggunakan drawable bawaan proyek
 
     Column(modifier = modifier) {
         Box(
