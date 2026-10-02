@@ -115,4 +115,16 @@ fun TugasPraktikumScreen(modifier: Modifier = Modifier) {
                     fontWeight = FontWeight.Medium,
                     color = Color.DarkGray
                 )
-            }
+
+                Spacer(modifier = Modifier.height(20.dp))
+
+                // Gambar/Card Showcase berbentuk lingkaran di bagian bawah
+                Box(
+                    modifier = Modifier
+                        .size(150.dp)
+                        .clip(CircleShape)
+                        .border(4.dp, Color(0xFF3F51B5), CircleShape),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Image(
+                        painter = painterResource(id = R.drawable.ic_launcher_background),
